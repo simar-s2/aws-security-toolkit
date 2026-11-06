@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232a3b"/>
+      <stop offset="1" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="40" y1="40" x2="216" y2="216">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <path id="shape" d="M128 34 L206 62 V122 C206 172 174 206 128 224 C82 206 50 172 50 122 V62 Z"/>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#tile)"/>
+  <use href="#shape" fill="none" stroke="url(#accent)" stroke-width="11" filter="url(#glow)" opacity="0.7"/>
+  <use href="#shape" fill="none" stroke="url(#accent)" stroke-width="11" stroke-linejoin="round"/>
+  <circle cx="96" cy="94" r="14" fill="#f8fafc"/>
+  <circle cx="160" cy="94" r="14" fill="#f8fafc"/>
+  <circle cx="128" cy="128" r="14" fill="#f8fafc"/>
+  <circle cx="96" cy="162" r="14" fill="#f8fafc"/>
+  <circle cx="160" cy="162" r="14" fill="#f8fafc"/>
+</svg>
